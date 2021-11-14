@@ -1,4 +1,4 @@
-# First-Perl-Program-Catalyst
+# Customer-Registration-Perl-Catalyst
 
 ## Perl Installation
 Visit the link [here](https://www.perl.org/get.html) to download and install the perl to your system.
