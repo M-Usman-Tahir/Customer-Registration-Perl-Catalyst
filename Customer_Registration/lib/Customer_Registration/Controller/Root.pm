@@ -41,6 +41,102 @@ sub index :Path :Args(0) {
     <meta name='viewport' content='width=device-width, initial-scale=1.0'>
     <script src='https://use.fontawesome.com/releases/v5.15.4/js/all.js'></script>
     <title>Customer Registeration</title>
+    <style>
+        *{
+            text-align:center;
+            /* align-items:center; */
+            align-self: center;
+        }
+        body{
+            font-family:Arial, Helvetica, sans-serif;
+            display:flex;
+            justify-content:center;
+            background-color: rgb(201, 201, 201);
+        }
+        input, select, option{
+            text-align:left;
+            display: inline-block;
+            padding: 3.5px;
+            margin: 2px;
+            border: 0.5px solid #AAA;
+            border-radius: 15px;
+            border-color: rgb(3, 121, 38);
+            border-width: 2px;
+            width: 230px;
+            padding: 7px 6px;
+            margin: 4px;
+            /* height:30px; */
+            box-shadow: inset 0 0 3px 1px green;
+        }
+        input:hover{
+            transform: scale(1.05, 1.05);
+        }
+        input:focus{
+            transform: scale(1.05, 1.05);
+        }
+        input.button{
+            text-align:center;
+            color: #fff;
+            background-color: rgb(104, 175, 104);
+            font-weight: bold;
+            font-family:'Times New Roman', Times, serif;
+            margin-top: 15px;
+            padding: 6.5px 10px;
+            box-shadow: inset 5px 5px 10px 3px #00a800,inset -5px -5px 10px 3px green;
+        }
+        input.button:hover{
+            cursor: pointer;
+            box-shadow: inset -5px -5px 10px 3px #00a800,inset 5px 5px 10px 3px green;
+            transform: scale(1, 1);
+        }
+        .reg:hover{
+            font-size: 19px;
+        }
+        .block{
+            display:flex;
+            justify-content:center;
+            border-radius: 20px;
+            background-color: rgb(241, 241, 241);
+            margin-top:80px;
+            box-shadow:inset 5px 5px 20px 2px #888, inset -5px -5px 20px 2px #fff;
+        }
+        .loginBlock{
+            width: 330px;
+            height:420px;
+        }
+        .signupBlock{
+            padding-left: 50px;
+            padding-right: 50px;
+            padding-top: 20px;
+            padding-bottom: 10px;
+        }
+        .logo{
+            width: 150px;
+            border-radius: 50px;
+            margin-top: 10px;
+            box-shadow:  5px 7px 20px 2px #999, -5px -7px 20px 2px #fff;
+        }
+        /* .logo:hover{
+            transform: rotateY(360deg);
+            transition: 1.5s;
+        } */
+        .para{
+            font-style: italic;
+        }
+        .Address{
+            width: 110px;
+        }
+        input#male, input#female{
+            width: 14px;
+            box-shadow: 0 10 3px 1px green;
+            border-radius:50%;
+            margin-left: 20px;
+        }
+        .Labels{
+            text-align: justify;
+        }form{
+        }
+    </style>
 </head>
 <body>
     <div class='block signupBlock'>
