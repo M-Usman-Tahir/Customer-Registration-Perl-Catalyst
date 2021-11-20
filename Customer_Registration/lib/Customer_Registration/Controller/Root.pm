@@ -43,7 +43,9 @@ sub index :Path :Args(0) {
 <body>
     <div class='block signupBlock'>
         <div class='head'>
-            
+            <div class='icon'>
+                <img class='logo' src='https://blog.eduonix.com/wp-content/uploads/2015/10/Perl-1-Introduction.png' alt='img' >
+            </div>
             <div class='name'>
                 <h1 class='login'>Customer Registration</h1>
             </div>
