@@ -41,6 +41,8 @@ sub index :Path :Args(0) {
     <meta name='viewport' content='width=device-width, initial-scale=1.0'>
     <script src='https://use.fontawesome.com/releases/v5.15.4/js/all.js'></script>
     <title>Customer Registeration</title>
+    <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script>
+    
     <style>
         *{
             text-align:center;
