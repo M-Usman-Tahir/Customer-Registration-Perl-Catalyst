@@ -202,6 +202,20 @@ sub index :Path :Args(0) {
                 \$(id).css('border-color', lightGreen);
             }
             
+            getPassword = ()=>{
+                let Pass = \$('#pswrd');
+                let Cpass = \$('#Cpswrd');
+            
+                console.log(Pass.val()!=Cpass.val());
+                console.log(Pass.val().length==0);
+                if(Pass.val()!=Cpass.val()||Pass.val().length<8){
+                    wrong(Pass);
+                    wrong(Cpass);
+                }else{
+                    correct(Pass);
+                    correct(Cpass);
+                }
+            }
             getOthers = () => {
                 let name = \$('#fname');
                 let lname = \$('#lname');
