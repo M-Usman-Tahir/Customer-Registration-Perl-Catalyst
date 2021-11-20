@@ -189,6 +189,43 @@ sub index :Path :Args(0) {
             <p class='para'>Already have an account, <a href='#' class='reg'>Login</a></p>
         </div>
     </div>
+    <script>
+        \$(document).ready(function() {
+
+            let lightGreen = 'rgb(3, 121, 38)';
+            wrong = (id)=>{
+                \$(id).css('box-shadow', 'inset 0 0 3px 1px red');
+                \$(id).css('border-color', 'red');
+            }
+            correct = (id)=>{
+                \$(id).css('box-shadow', 'inset 0 0 3px 1px green');
+                \$(id).css('border-color', lightGreen);
+            }
+            
+            getOthers = () => {
+                let name = \$('#fname');
+                let lname = \$('#lname');
+                let StNum = \$('#Snum');
+                let city = \$('#city');
+                let postalCode = \$('#postalCode');
+                if(name.val().length==0) wrong(name);
+                else correct(name);
+                if(lname.val().length==0) wrong(lname);
+                else correct(lname);
+                if(StNum.val().length==0) wrong(StNum);
+                else correct(StNum);
+                if(city.val().length==0) wrong(city);
+                else correct(city);
+                if(postalCode.val().length==0) wrong(postalCode);
+                else correct(postalCode);
+            }
+            \$('#button').click(()=>{
+                getOthers();
+                getEmail();
+                getPassword();
+            });
+        });
+    </script>
 </body>
 </html>
     ");
