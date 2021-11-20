@@ -201,7 +201,14 @@ sub index :Path :Args(0) {
                 \$(id).css('box-shadow', 'inset 0 0 3px 1px green');
                 \$(id).css('border-color', lightGreen);
             }
-            
+            getEmail = ()=>{
+                let email = \$('#email');
+                let regex = new RegExp('^([a-zA-Z0-9_+.-])+@(([a-zA-Z0-9-])+\\.)+([a-zA-Z0-9]{2,6})+\$');
+                if((email.val().length==0)||(!regex.test(email.val()))) {
+                    wrong(email);
+                }
+                else correct(email);
+            }
             getPassword = ()=>{
                 let Pass = \$('#pswrd');
                 let Cpass = \$('#Cpswrd');
